@@ -3,16 +3,40 @@
 .main {
     width: 700px;
     border-radius: 15px;
-    background-color: #01579b;
+    background-color: #497c67;
+}
+
+.App {
+    margin-top: 10%;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    height: 60px;
+    background-color: #424242;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    font-family: 'Recursive', sans-serif;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header {
-    background-color: #b87d7d;
+    background-color: #424242;
     color: whitesmoke;
-    padding: 10px;
-    font-size: 28px;
-    border-radius: 15px;
+    margin: 10px 0px 0px 10px;
+    font-size: 25px;
+    border-radius: 20px 20px 0 0;
     font-family: 'Recursive', sans-serif;
+}
+
+.button {
+    width: 35px;
+    height: 35px;
 }
 
 .day {
@@ -28,4 +52,24 @@
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
     font-size: 18px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sunrise-sunset {
+    padding: 15px;
+    color: whitesmoke;
+    font-family: 'Recursive', sans-serif;
+    font-size: 16px;
+}
+
+.description {
+    padding: 15px;
+    color: whitesmoke;
+    font-family: 'Recursive', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
 }
