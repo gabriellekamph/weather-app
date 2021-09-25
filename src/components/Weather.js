@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 import moment from 'moment';
-import { Button } from 'semantic-ui-react';
+import { Button, Icon } from 'semantic-ui-react';
 
 // Refresh button to update to current data
 
@@ -14,17 +14,13 @@ const refresh = () => {
 const WeatherCard = ({weatherData}) => (
     <div className="main">
         <div className="top">
-            <p className="header">{weatherData.name}</p>
-            <Button className="button" inverted color='white' circular icon='refresh' onClick={refresh} />
+            <p className="header"><Icon name="map marker alternate" /> {weatherData.name}</p>
+            <Button className="button" inverted color="vk" circular icon='refresh' onClick={refresh} />
         </div>
 
         <div className="flex">
             <p className="day">{moment().format('dddd')}, <span>{moment().format('LL')}</span></p>
-            <p className="description">Right now: {weatherData.weather[0].main}</p>
-        </div>
-
-        <div className="flex">
-            <p className="temp">Temprature: {weatherData.main.temp} &deg;C</p>
+            <p className="temp"><Icon name="thermometer" /> {weatherData.main.temp} &deg;C</p>
         </div>
 
         <div className="flex">
