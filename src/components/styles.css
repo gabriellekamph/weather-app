@@ -1,17 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 
-.main {
+.App {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(183, 228, 222);
+}
+
+.today {
     width: 600px;
     border-radius: 15px;
     background-color: rgb(100, 144, 175);
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
 
-.App {
-    margin-top: 150px;
-    width: 100vw;
-    text-align: center;
+.week {
+    width: 80%;
+    height: 200px;
+    background-color: rgb(241, 241, 241);
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.day {
+    display: flex;
+    justify-content: space-between;
 }
 
 .top {
@@ -39,7 +60,14 @@
     height: 35px;
 }
 
-.day {
+.next-five {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+
+.current-day {
     padding: 20px;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;

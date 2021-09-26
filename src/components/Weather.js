@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.css';
 import moment from 'moment';
 import { Button, Icon } from 'semantic-ui-react';
+import Week from './Week';
 
 // Refresh button to update to current data
 
@@ -12,14 +13,15 @@ const refresh = () => {
 // Card to display current weather based on user location
 
 const WeatherCard = ({weatherData}) => (
-    <div className="main">
+    <>
+    <div className="today">
         <div className="top">
             <p className="header"><Icon name="map marker alternate" /> {weatherData.name}</p>
             <Button className="button" inverted color="vk" circular icon='refresh' onClick={refresh} />
         </div>
 
         <div className="flex">
-            <p className="day">{moment().format('dddd')}, <span>{moment().format('LL')}</span>
+            <p className="current-day">{moment().format('dddd')}, <span>{moment().format('LL')}</span>
             <br /> {moment().format('HH:mm')}</p>
            <p className="temp"><Icon name="thermometer" /> {weatherData.main.temp} &deg;C</p>
         </div>
@@ -35,6 +37,10 @@ const WeatherCard = ({weatherData}) => (
             <p className="sunrise-sunset">Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('sv-SE')}</p>
         </div>
     </div>
+
+    <Week weatherData={weatherData} />
+
+    </>
 )
 
 export default WeatherCard;
