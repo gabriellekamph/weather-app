@@ -5,6 +5,7 @@
     height: 100vh;
     text-align: center;
     display: flex;
+    align-content: center;
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(183, 228, 222);
@@ -12,16 +13,16 @@
 
 .today {
     width: 600px;
+    height: 290px;
     border-radius: 15px;
     background-color: rgb(100, 144, 175);
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin: 50px;
 }
 
 .week {
     width: 80%;
     height: 200px;
-    background-color: rgb(241, 241, 241);
+    /* background-color: rgb(241, 241, 241); */
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
@@ -33,6 +34,12 @@
 .day {
     display: flex;
     justify-content: space-between;
+}
+
+.next-five {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 .top {
@@ -50,7 +57,7 @@
     background-color: #424242;
     color: whitesmoke;
     margin: 10px 0px 0px 10px;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 20px 20px 0 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -60,18 +67,11 @@
     height: 35px;
 }
 
-.next-five {
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-    width: 100%;
-}
-
 .current-day {
     padding: 20px;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     text-align: left;
 }
 
@@ -86,7 +86,7 @@
     padding: 20px;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .flex {
@@ -95,15 +95,15 @@
 }
 
 .sunrise-sunset {
-    padding: 20px;
+    padding: 0 20px;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
 
 .description {
-    padding: 20px;
+    padding: 10px 20px;
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
