@@ -19,8 +19,15 @@ const WeatherCard = ({weatherData}) => (
         </div>
 
         <div className="flex">
-            <p className="day">{moment().format('dddd')}, <span>{moment().format('LL')}</span></p>
-            <p className="temp"><Icon name="thermometer" /> {weatherData.main.temp} &deg;C</p>
+            <p className="day">{moment().format('dddd')}, <span>{moment().format('LL')}</span>
+            <br /> {moment().format('HH:mm')}</p>
+           <p className="temp"><Icon name="thermometer" /> {weatherData.main.temp} &deg;C</p>
+        </div>
+
+        <div className="flex">
+            <p className="description">
+                Right now: {weatherData.weather[0].description}
+            </p>
         </div>
 
         <div className="flex">
